@@ -3,10 +3,12 @@
   font-family: "Bitter", serif;
 }
 
+html,
 body {
   color: #1f1f1f;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 p,
@@ -23,4 +25,143 @@ a {
   padding: 0;
   color: #1f1f1f;
   font-family: "Bitter", serif;
+}
+
+/* global classes */
+.btn {
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 5px 25px;
+  border: none;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.94;
+}
+
+/* navbar */
+.navbar {
+  width: min(90%, 700px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.navbar h1 {
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+  margin: 15px 0;
+}
+
+.nav-items {
+  display: flex;
+  align-items: baseline;
+  gap: 25px;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-size: 1.1rem;
+}
+
+/* socialMedia links */
+.social-media {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 3px 0;
+}
+
+.social-media ul {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media li {
+  list-style: none;
+}
+
+.social-media img {
+  width: 20px;
+}
+
+.social-media img:hover {
+  opacity: 0.8;
+}
+
+/* Main */
+main {
+  width: min(90%, 700px);
+  margin: 0 auto;
+}
+
+/* Challenges */
+/* =========== */
+.challenges-title {
+  margin: 1.4rem 0 0.5rem 0;
+}
+
+.challenges-container h2 {
+  text-align: center;
+  background-color: #fff;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: -23px;
+  z-index: 100;
+}
+.challenges-container hr {
+  z-index: 1;
+}
+
+.challenges-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-items: center;
+  align-items: stretch;
+  gap: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.challenge {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 21.7rem;
+  text-decoration: none;
+  border: 0.5px solid #1f1f1f;
+  cursor: pointer;
+  padding: 10px 10px;
+  box-shadow: 1px 1px 0px #1f1f1f;
+  transition: ease-in-out 0.1s;
+}
+.challenge:hover {
+  box-shadow: 5px 4px 0px #1f1f1f;
+}
+.challenge:hover img {
+  border: 0.5px solid #1f1f1f;
+}
+.challenge:hover .challenge-title {
+  font-weight: 600;
+}
+
+.thumbnail img {
+  max-width: 100%;
+  transition: ease-in-out 0.1s;
+}
+
+.challenge-title {
+  color: #1f1f1f;
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 5px 0 2px 0;
 }
