@@ -1,9 +1,138 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #f1f8f7;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #2d2d2d;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ul,
+a {
+  margin: 0;
+  padding: 0;
+  color: #1f1f1f;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  position: relative;
+}
+
+.circle {
+  width: 246px;
+  height: 246px;
+  border-radius: 50%;
+}
+
+.first-circle {
+  position: absolute;
+  background-color: #8ff9f2;
+  z-index: -1;
+  top: -50px;
+  right: 0px;
+}
+.second-circle {
+  position: absolute;
+  background-color: #68ff7d;
+  z-index: -1;
+  bottom: -50px;
+  left: 0px;
+}
+
+.form-container {
+  background: linear-gradient(rgba(0, 232, 185, 0.5), rgba(0, 190, 229, 0.5));
+  backdrop-filter: blur(16px);
+  border: 1px solid #fff;
+  width: 448px;
+  height: 441px;
+  border-radius: 82px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.user-avatar {
+  width: 90px;
+  height: 90px;
+}
+
+.username {
+  font-size: 19px;
+}
+
+.email {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+input[type="password"] {
+  border-radius: 14px;
+  border: none;
+  height: 36px;
+  width: 326px;
+  padding-left: 14px;
+  background: url(assets/eye.svg) no-repeat #fff;
+  background-position: 300px 12px;
+}
+
+input[type="password"]::placeholder {
+  font-size: 15px;
+  font-weight: 300;
+  color: #2d2d2d;
+  opacity: 0.5;
+}
+
+.form-container a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+button {
+  width: 79px;
+  height: 54px;
+  border-radius: 13px;
+  border: 2px solid #fff;
+  background: linear-gradient(#00e3e3, #4cf6b1);
+  cursor: pointer;
+}
+
+button img {
+  width: 21px;
+  height: 20px;
+  margin-top: 2px;
 }
